@@ -12,6 +12,17 @@ $(function(){
     $("div.second_hand").css({transform: 'rotate(' + count + 'deg)' });
   }, 1000);
 
+  var minCount = 0;
+  setInterval(function(){
+    if(minCount < 360){
+      minCount += 6;
+    } else {
+      minCount = 6;
+    }
+    console.log("minCount: " + minCount);
+    $("div.minute_hand").css({transform: 'rotate(' + minCount + 'deg)' });
+  }, 60000);
+
   function Clock(){
     this.run = function(){
       setInterval(function () {

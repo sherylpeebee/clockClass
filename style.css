@@ -16,14 +16,34 @@ body {
   flex-direction: row-reverse;
 }
 
-.second_hand {
-    width: 244px;
+.hour_hand {
+    width: 165px;
     position: relative;
     left: 450px;
     top: 345px;
     background-color: white;
-    /* border: 4px solid white; */
+    border-top: 7px solid white;
+    transform-origin: left;
+    border-radius: 63px;
+}
+
+.minute_hand {
+    width: 217px;
+    position: relative;
+    left: 454px;
+    top: 340px;
+    background-color: white;
     border-top: 4px solid white;
+    transform-origin: left;
+}
+.second_hand {
+    width: 233px;
+    position: relative;
+    left: 454px;
+    top: 352px;
+    background-color: white;
+    /* border: 4px solid white; */
+    border-top: 3px solid white;
     transform-origin: left;
 }
 
