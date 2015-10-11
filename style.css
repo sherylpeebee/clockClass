@@ -17,12 +17,14 @@ body {
 }
 
 .second_hand {
-    width: 430px;
+    width: 244px;
     position: relative;
-    left: 244px;
+    left: 450px;
     top: 345px;
     background-color: white;
-    border: 4px solid white;
+    /* border: 4px solid white; */
+    border-top: 4px solid white;
+    transform-origin: left;
 }
 
 .hour {

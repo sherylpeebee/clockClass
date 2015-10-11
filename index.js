@@ -9,7 +9,7 @@ $(function(){
       count = 6;
     }
     console.log(count);
-    $("div.second_hand").css({transform: 'rotate(' + count + 'deg)'});
+    $("div.second_hand").css({transform: 'rotate(' + count + 'deg)' });
   }, 1000);
 
   function Clock(){
