@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+
 body {
   background-color: #ff4b38;
 }
@@ -27,7 +29,7 @@ body {
     margin-left: 82px;
     border: 3px solid white;
     width: 50px;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 .quad {
@@ -125,4 +127,17 @@ body {
     position: relative;
     top: 40px;
     right: -19px;
+}
+
+.digital_side {
+    height: 860px;
+    width: 50%;
+    background-color: white;
+    float: right;
+    color: #ff4b38;
+    margin-top: 20px;
+    margin-right: 17px;
+    position: relative;
+    bottom: -5px;
+    font-family: 'Rock Salt', cursive;
 }
