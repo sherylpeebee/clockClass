@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600);
 
 body {
   background-color: #ff4b38;
@@ -139,5 +139,19 @@ body {
     margin-right: 17px;
     position: relative;
     bottom: -5px;
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1.digital_time {
+    /* border: 5px solid; */
+    padding: 33px;
+    text-align: center;
+    letter-spacing: 36px;
+    margin-top: 240px;
+}
+
+@media screen and (min-width: 768px){
+  .jumbotron .h1, .jumbotron h1 {
+      font-size: 140px;
+  }
 }
