@@ -1,15 +1,13 @@
-//javascript class practice
-
 $(function(){
-  var count = 0;
+  var secsCount = 0;
   setInterval(function(){
-    if(count < 360){
-      count += 6;
+    if(secsCount < 360){
+      secsCount += 6;
     } else {
-      count = 6;
+      secsCount = 6;
     }
-    console.log(count);
-    $("div.second_hand").css({transform: 'rotate(' + count + 'deg)' });
+    console.log(secsCount);
+    $("div.second_hand").css({transform: 'rotate(' + secsCount + 'deg)' });
   }, 1000);
 
   var minCount = 0;
@@ -31,6 +29,12 @@ $(function(){
         var hh = hours.toString().length < 2 ? "0" + hours : hours;
         var mm = date.getMinutes().toString().length < 2 ? "0" + date.getMinutes() : date.getMinutes();
         var ss = date.getSeconds().toString().length < 2 ? "0" + date.getSeconds() : date.getSeconds();
+
+        var hourIncr =  hh < 3 < hh ? (hh - 3) * 30 : 0;
+
+        $("div.hour_hand").css({transform: 'rotate(' + hourIncr + 'deg)' });
+
+
         console.log(date);
         console.log(hh + ":" + mm + ":" + ss);
         $(".digital_time").text(hh + ":" + mm + ":" + ss);
@@ -42,3 +46,7 @@ $(function(){
   clock.run();
 
 });
+
+//start all hands at noon.
+//get hour time from clock func and increment 30deg for every past noon
+//every fifteen minutes, hour increment six degrees (one notch)
